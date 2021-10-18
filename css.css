@@ -1,0 +1,134 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: cyan;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.buttonMenu {
+    font-size:30px;
+    cursor:pointer;
+    position: fixed;
+    visibility: visible;
+}
+
+.buttonMenu:hover {
+    color: #818181;
+}
+
+.buttonMenuMobile {
+    font-size:30px;
+    cursor:pointer;
+    position: fixed;
+    visibility: hidden;
+}
+
+.buttonMenuMobile:hover{
+    color: #818181;
+}
+
+.login {
+    position: fixed;
+    z-index: 2;
+    right: 10px;
+    top: 20px;
+    text-decoration: none;
+    cursor:pointer;
+
+}
+.login:hover {
+    color: #818181;
+}
+.container{
+    width: 65%;
+    margin: auto;
+    overflow: hidden;
+    background: #1f2833;
+    margin-top: 60px;
+    cursor:pointer;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+    grid-gap: 20px;
+}
+.grid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+.grid > article img {
+    max-width: 100%;
+}
+.text {
+    padding: 0 20px 20px;
+}
+
+.text:hover {
+    opacity: 0.5;
+}
+.text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+.grid > article:nth-child(1) {
+    grid-column: span 2;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: darkcyan;
+}

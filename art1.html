@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hardware</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            color: cyan;
+            background: black;
+        }
+
+    </style>
+</head>
+<body onload="menuButton()" onresize="menuButton()">
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html">Domov</a>
+    <a href="#">Procesory</a>
+    <a href="#">Maticne Dosky</a>
+    <a href="#">Pamate</a>
+    <a href="#">Graficke Karty</a>
+    <a href="#">Smartphony</a>
+    <a href="#">Ine</a>
+</div>
+
+<div style="background-color: black;width: 100%;height: 50px;position: fixed;top: 0px">
+    <span class = "buttonMenu" style="top:5px" onclick="openNav()">&#9776; Hardware</span>
+    <span class = "buttonMenuMobile" style="top:5px" onclick="openNav()">&#9776; </span>
+    <div class="login" style="background-color:rgba(0, 0, 0, 0.5);">
+        <a >
+            Prihlásiť
+        </a>
+    </div>
+</div>
+<div style="background-color: cyan;width: 100%;height: 2px;position: fixed;top: 50px"></div>
+
+<div class="container" style="cursor: auto">
+    <header >
+        <img style="width: calc(100% - 40px);margin-left: calc(20px);margin-right: calc(20px);" src="https://imgs.sector.sk/files/novinky/0/2021/10-18-19-42-70/apple-zapracovalo-vyrez-aj-do--image-4387-660.jpg">
+    </header>
+    <main role="main" >
+        <div style="margin-left: 2vw;margin-right: 2vw;display: block;width: auto;color: #cccccc" >
+            <h1>Apple práve zapracovalo výrez v displeji aj do notebooku</h1>
+            <p>Nový Macbook Pro bol ohlásený a Apple do neho pridalo aj výrez.</p>
+            <p>Nový Macbook Pro bol ohlásený a Apple do neho pridalo aj výrez. Vo výreze je len jedna štandardná 1080p kamera, senzor a jedna led dioda. Nie je tam ani Face ID. Zrejme si myslia, že to takto bude vyzerať lepšie a vôbec to nebude zavadzať, keď niečo pustíte na fullscreen.
+                Dúfajme, že ho nikto nebude kopírovať.</p>
+            <p>Samotný notebook je 14 a 16 palcový, má v sebe M1 Pro procesor, 120Hz 3456 x 2224px LCD displej s miniled podsvietením a HDR podporu.
+                M1 Pro procesor má maximum 8 jadier plus dve menšie jadrá a maximum 10 Tflops compute výkonu v grafike.</p>
+            <p>
+                14 palcová verzia bude za cenu od 1999 dolárov, 16 palcová od 2499 dolárov.
+            </p>
+            <footer style="text-decoration: none;color: darkcyan">
+                <p>Zdroj :  <a style="text-decoration: none;color: cyan" href="https://www.sector.sk/novinka/264749/apple-prave-zapracovalo-vyrez-v-displeji-aj-do-notebooku.htm" alt="src" target="_blank"> sector.sk</a> </p>
+            </footer>
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
